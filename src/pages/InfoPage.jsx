@@ -137,7 +137,7 @@ const InfoPage = () => {
         >
           <Stack spacing={2}>
             <IconButton 
-              href="https://github.com"
+              href="https://github.com/Hyfata"
               target="_blank" 
               sx={{ 
                 background: (theme) => theme.palette.gradient,
@@ -148,7 +148,7 @@ const InfoPage = () => {
               <GitHubIcon />
             </IconButton>
             <IconButton 
-              href="https://discord.com" 
+              href="http://discord.hyfata.kr/"
               target="_blank" 
               sx={{ 
                 background: (theme) => theme.palette.gradient,

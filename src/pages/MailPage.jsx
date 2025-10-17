@@ -4,6 +4,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import SummarizeOutlinedIcon from '@mui/icons-material/SummarizeOutlined';
+import HeadManager from '../components/HeadManager';
 
 const features = [
   {
@@ -25,59 +26,65 @@ const features = [
 
 const MailPage = () => {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Paper sx={{
-        p: { xs: 2, sm: 4, md: 6 },
-        textAlign: 'center',
-        background: 'rgba(255, 255, 255, 0.05)',
-        backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        borderRadius: '16px',
-      }}>
-        <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-          Hyfata Mail
-        </Typography>
-        <Typography variant="h6" color="text.secondary" paragraph sx={{ mb: 4 }}>
-          AI와 함께 더 스마트하고 효율적인 메일 관리를 시작하세요.
-        </Typography>
-        <Button
-          component="a"
-          href="http://mail.hyfata.kr"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="contained"
-          size="large"
-          endIcon={<ArrowForwardIcon />}
-        >
-          Hyfata Mail 바로가기
-        </Button>
-      </Paper>
+    <>
+      <HeadManager
+        title="Hyfata Mail - AI 기반 웹메일"
+        description="다중 계정 관리, AI 메일 작성 및 요약 기능을 제공하는 차세대 메일 서비스를 소개합니다."
+      />
+      <Container maxWidth="lg" sx={{ py: 4 }}>
+        <Paper sx={{
+          p: { xs: 2, sm: 4, md: 6 },
+          textAlign: 'center',
+          background: 'rgba(255, 255, 255, 0.05)',
+          backdropFilter: 'blur(10px)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderRadius: '16px',
+        }}>
+          <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
+            Hyfata Mail
+          </Typography>
+          <Typography variant="h6" color="text.secondary" paragraph sx={{ mb: 4 }}>
+            AI와 함께 더 스마트하고 효율적인 메일 관리를 시작하세요.
+          </Typography>
+          <Button
+            component="a"
+            href="http://mail.hyfata.kr"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="contained"
+            size="large"
+            endIcon={<ArrowForwardIcon />}
+          >
+            Hyfata Mail 바로가기
+          </Button>
+        </Paper>
 
-      <Box sx={{ my: { xs: 4, md: 8 } }}>
-        <Grid container spacing={4} justifyContent="center">
-          {features.map((feature) => (
-            <Grid item xs={12} md={4} key={feature.title}>
-              <Paper sx={{
-                p: 3,
-                height: '100%',
-                textAlign: 'center',
-                background: 'rgba(0,0,0,0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.05)',
-                borderRadius: '16px',
-              }}>
-                <Box mb={2}>{feature.icon}</Box>
-                <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
-                  {feature.title}
-                </Typography>
-                <Typography color="text.secondary">
-                  {feature.description}
-                </Typography>
-              </Paper>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
-    </Container>
+        <Box sx={{ my: { xs: 4, md: 8 } }}>
+          <Grid container spacing={4} justifyContent="center">
+            {features.map((feature) => (
+              <Grid item xs={12} md={4} key={feature.title}>
+                <Paper sx={{
+                  p: 3,
+                  height: '100%',
+                  textAlign: 'center',
+                  background: 'rgba(0,0,0,0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.05)',
+                  borderRadius: '16px',
+                }}>
+                  <Box mb={2}>{feature.icon}</Box>
+                  <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
+                    {feature.title}
+                  </Typography>
+                  <Typography color="text.secondary">
+                    {feature.description}
+                  </Typography>
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Container>
+    </>
   );
 };
 

@@ -30,6 +30,7 @@ const InfoPage = () => {
       <HeadManager
         title="정보 - Hyfata"
         description="Hyfata의 시작과 역사, 그리고 '미시적 혁신'을 통한 저희의 개발 철학을 소개합니다."
+        url="/info"
       />
       <Box>
         <AnimatedPage>

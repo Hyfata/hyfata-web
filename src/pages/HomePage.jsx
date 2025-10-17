@@ -34,6 +34,7 @@ const HomePage = () => {
       <HeadManager
         title="Hyfata"
         description="Hyfata 공식 웹사이트. 혁신적인 웹메일 서비스와 다양한 애플리케이션을 만나보세요."
+        url="/"
       />
       <Container maxWidth="md" sx={{ textAlign: 'center', py: { xs: 4, md: 8 } }}>
         <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>

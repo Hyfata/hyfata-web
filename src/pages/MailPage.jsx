@@ -30,6 +30,7 @@ const MailPage = () => {
       <HeadManager
         title="Hyfata Mail - AI 기반 웹메일"
         description="다중 계정 관리, AI 메일 작성 및 요약 기능을 제공하는 차세대 메일 서비스를 소개합니다."
+        url="/mail"
       />
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Paper sx={{

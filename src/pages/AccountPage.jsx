@@ -8,6 +8,7 @@ const AccountPage = () => {
       <HeadManager
         title="내 계정 - Hyfata"
         description="내 계정 정보를 확인하고 설정을 관리합니다."
+        url="/account"
       />
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="60vh">
         <Paper sx={{ p: 4, textAlign: 'center', background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)' }}>

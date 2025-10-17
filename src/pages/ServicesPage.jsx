@@ -15,6 +15,7 @@ const ServicesPage = () => {
       <HeadManager
         title="서비스 - Hyfata"
         description="Hyfata에서 제공하는 다양한 웹 애플리케이션과 서비스 목록입니다."
+        url="/services"
       />
       <Grid container spacing={4} justifyContent="center">
         {apps.map((app, index) => (

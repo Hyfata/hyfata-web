@@ -8,6 +8,7 @@ const LoginPage = () => {
       <HeadManager
         title="로그인 - Hyfata"
         description="Hyfata 서비스에 로그인하여 모든 기능을 이용하세요."
+        url="/login"
       />
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="60vh">
         <Paper sx={{ p: 4, textAlign: 'center', background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)' }}>

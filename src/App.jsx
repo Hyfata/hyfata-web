@@ -9,6 +9,7 @@ import AnimatedPage from './components/AnimatedPage';
 import MailPage from './pages/MailPage';
 import LoginPage from './pages/LoginPage';
 import AccountPage from './pages/AccountPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
           <Route path="/mail" element={<AnimatedPage><MailPage /></AnimatedPage>} />
           <Route path="/login" element={<AnimatedPage><LoginPage /></AnimatedPage>} />
           <Route path="/account" element={<AnimatedPage><AccountPage /></AnimatedPage>} />
+          <Route path="*" element={<AnimatedPage><NotFoundPage /></AnimatedPage>} />
         </Routes>
       </AnimatePresence>
     </Layout>

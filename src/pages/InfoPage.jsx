@@ -148,7 +148,7 @@ const InfoPage = () => {
               <GitHubIcon />
             </IconButton>
             <IconButton 
-              href="http://discord.hyfata.kr/"
+              href="https://discord.hyfata.kr/"
               target="_blank" 
               sx={{ 
                 background: (theme) => theme.palette.gradient,

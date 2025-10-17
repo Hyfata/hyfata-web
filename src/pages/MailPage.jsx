@@ -49,7 +49,7 @@ const MailPage = () => {
           </Typography>
           <Button
             component="a"
-            href="http://mail.hyfata.kr"
+            href="https://mail.hyfata.kr"
             target="_blank"
             rel="noopener noreferrer"
             variant="contained"

@@ -34,6 +34,16 @@ const routes = [
     title: '내 계정 - Hyfata',
     description: '내 계정 정보를 확인하고 설정을 관리합니다.',
   },
+  {
+    path: '/discord-bot/terms',
+    title: 'AI-chan · 쿠로네 이용약관 - Hyfata',
+    description: 'Hyfata의 디스코드 AI 챗봇 AI-chan(아이짱)과 쿠로네의 이용약관입니다.',
+  },
+  {
+    path: '/discord-bot/privacy',
+    title: 'AI-chan · 쿠로네 개인정보 처리방침 - Hyfata',
+    description: 'Hyfata의 디스코드 AI 챗봇 AI-chan(아이짱)과 쿠로네의 개인정보 처리방침입니다.',
+  },
 ];
 
 const distPath = path.join(__dirname, '..', 'dist');
